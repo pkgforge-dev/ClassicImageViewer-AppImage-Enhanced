@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/ClassicImageViewer-AppImage-Enhanced)](https://github.com/pkgforge-dev/ClassicImageViewer-AppImage-Enhanced/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://raw.githubusercontent.com/classicimageviewer/ClassicImageViewer/2a7e084084adbdb967d669aee11f64f83c7db3a3/misc/logo.svg" width="128" />
 </p>
 
 
