@@ -16,11 +16,13 @@ get-debloated-pkgs --add-common --prefer-nano
 #make-aur-package PACKAGENAME
 
 # If the application needs to be manually built that has to be done down here
+git clone https://github.com/classicimageviewer/ClassicImageViewer
+mkdir -p ./AppDir/bin
 
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+cd ClassicImageViewer
+qmake .
+make -s clean
+make -j$(nproc)
+cp -v build/civ ../AppDir/bin
+cp -v install/usr/share/icons/hicolor/256x256/civ.png ../AppDir
+cp -r install/usr/share ../AppDir/usr
