@@ -16,9 +16,14 @@ get-debloated-pkgs --add-common --prefer-nano
 #make-aur-package PACKAGENAME
 
 # If the application needs to be manually built that has to be done down here
-git clone https://github.com/classicimageviewer/ClassicImageViewer
-mkdir -p ./AppDir/bin
+echo "Making nightly build of ClassicImageViewer..."
+echo "---------------------------------------------------------------"
+REPO="https://github.com/classicimageviewer/ClassicImageViewer"
+VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
+git clone "$REPO" ./ClassicImageViewer
+echo "$VERSION" > ~/version
 
+mkdir -p ./AppDir/bin
 cd ClassicImageViewer
 qmake .
 make -s clean
