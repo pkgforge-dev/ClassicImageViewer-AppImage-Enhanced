@@ -7,6 +7,7 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
+export ICON=https://raw.githubusercontent.com/classicimageviewer/ClassicImageViewer/refs/heads/main/install/usr/share/icons/hicolor/256x256/apps/civ.png
 export DESKTOP=https://raw.githubusercontent.com/classicimageviewer/ClassicImageViewer/refs/heads/main/install/usr/share/applications/classicimageviewer.desktop
 export DEPLOY_QT=1
 export QT_DIR=qt6
