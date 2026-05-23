@@ -27,7 +27,7 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ClassicImageViewer
-qmake .
+qmake6 .
 make -s clean
 make -j$(nproc)
 mv -v build/civ ../AppDir/bin
