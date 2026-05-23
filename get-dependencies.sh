@@ -28,6 +28,4 @@ cd ClassicImageViewer
 qmake .
 make -s clean
 make -j$(nproc)
-cp -v build/civ ../AppDir/bin
-cp -v install/usr/share/icons/hicolor/256x256/civ.png ../AppDir
-cp -r install/usr/share ../AppDir/usr
+mv -v build/civ ../AppDir/bin
