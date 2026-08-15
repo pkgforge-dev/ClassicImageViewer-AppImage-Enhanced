@@ -15,8 +15,6 @@ export QT_DIR=qt6
 # Deploy dependencies
 quick-sharun ./AppDir/bin/civ
 
-# Additional changes can be done in between here
-
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
