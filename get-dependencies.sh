@@ -14,7 +14,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of ClassicImageViewer..."
+echo "Building ClassicImageViewer..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/classicimageviewer/ClassicImageViewer"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
