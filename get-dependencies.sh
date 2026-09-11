@@ -6,9 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    qt6-imageformats \
-    qt6-tools
+pacman -Syu --noconfirm qt6-imageformats qt6-tools
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
